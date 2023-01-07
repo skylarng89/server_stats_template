@@ -28,9 +28,16 @@
             </div>
             <div class="serverStats">
                 <img src="./assets/clock.png" alt="" class="icon">
-                <h2 class="statsValue">
+		<h2 class="statsValue">
+
+                    <?php
+                    date_default_timezone_set('Africa/Lagos');
+                    echo date("F d, Y h:i:s A e", time());
+                    ?>
+                    <!--
                     <?php $serverTime = date_default_timezone_get();
-                    echo "$serverTime"; ?>
+		    echo "$serverTime"; ?>
+		    -->
                 </h2>
             </div>
         </div>
